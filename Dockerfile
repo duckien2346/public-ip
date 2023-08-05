@@ -17,6 +17,6 @@ COPY . .
 RUN npm run build
 
 # Start the server using the production build
-EXPOSE 80
-CMD [ "node", "dist/main.js" ]
+EXPOSE 3000
+CMD [ "npm", "start:prod" ]
 
